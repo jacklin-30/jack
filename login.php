@@ -6,7 +6,7 @@ session_start();
 // check if the user is already logged in
 if (isset($_SESSION['user_id'])) {
   // if yes, redirect to the home page
-  header('Location: index.php');
+  header('Location: index1.html');
   exit();
 }
 
