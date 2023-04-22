@@ -1,0 +1,247 @@
+/* Set box-sizing to border-box */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Set default font size and line height */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Set default font family */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Set margin and padding to 0 for the body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and text color for the body */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  margin: 0;
+}
+header a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav li {
+  margin-left: 20px;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+.login-buttons {
+  position: absolute;
+  top: 2%;
+  right: 20px;
+  transform: translateY(-2%);
+}
+.login-buttons a {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff; /* change text color to white */
+  background-color: #007bff; /* change background color to blue */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/* Style the hero section */
+#hero {
+  background-image: url(https://images.unsplash.com/photo-1499591934245-40b55745b905?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsbGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#hero button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#hero button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style the main content */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the destinations section */
+#destinations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+#destinations li {
+  list-style: none;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#destinations li:hover {
+  transform: translateY(-5px);
+}
+
+#destinations img {
+  width: 100%;
+  height: auto;
+}
+
+#destinations h3 {
+  margin: 20px;
+  font-size: 24px;
+}
+
+#destinations p {
+  margin: 0 20px 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Style the about section */
+#about {
+  margin-top: 50px;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  header nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+
+  header nav.active li {
+    margin: 10px 0;
+  }
+  
+  #destinations {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  #hero h2 {
+    font-size: 36px;
+  }
+  
+  #hero p {
+    font-size: 20px;
+  }
+  
+  #hero button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  
+  #about h2 {
+    font-size: 30px;
+  }
+  
+  #about p {
+    font-size: 18px;
+  }
+}
