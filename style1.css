@@ -2,11 +2,12 @@
 header {
   background-color: #5D5FEF;
   color: #fff;
-  height: 100px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
+  padding: 20px;
+  padding-bottom:35px;
 }
 
 header ul {
